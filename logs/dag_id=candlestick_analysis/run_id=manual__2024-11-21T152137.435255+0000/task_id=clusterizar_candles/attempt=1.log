@@ -1,0 +1,21 @@
+[2024-11-21T15:21:53.468+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2024-11-21T15:21:53.494+0000] {taskinstance.py:2613} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: candlestick_analysis.clusterizar_candles manual__2024-11-21T15:21:37.435255+00:00 [queued]>
+[2024-11-21T15:21:53.507+0000] {taskinstance.py:2613} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: candlestick_analysis.clusterizar_candles manual__2024-11-21T15:21:37.435255+00:00 [queued]>
+[2024-11-21T15:21:53.509+0000] {taskinstance.py:2866} INFO - Starting attempt 1 of 1
+[2024-11-21T15:21:53.528+0000] {taskinstance.py:2889} INFO - Executing <Task(PythonOperator): clusterizar_candles> on 2024-11-21 15:21:37.435255+00:00
+[2024-11-21T15:21:53.545+0000] {warnings.py:112} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:70: DeprecationWarning: This process (pid=294) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2024-11-21T15:21:53.547+0000] {standard_task_runner.py:72} INFO - Started process 303 to run task
+[2024-11-21T15:21:53.546+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'candlestick_analysis', 'clusterizar_candles', 'manual__2024-11-21T15:21:37.435255+00:00', '--job-id', '50', '--raw', '--subdir', 'DAGS_FOLDER/application.py', '--cfg-path', '/tmp/tmprj5fx4u7']
+[2024-11-21T15:21:53.550+0000] {standard_task_runner.py:105} INFO - Job 50: Subtask clusterizar_candles
+[2024-11-21T15:21:53.618+0000] {task_command.py:467} INFO - Running <TaskInstance: candlestick_analysis.clusterizar_candles manual__2024-11-21T15:21:37.435255+00:00 [running]> on host c397a827dfef
+[2024-11-21T15:21:53.730+0000] {taskinstance.py:3132} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='candlestick_analysis' AIRFLOW_CTX_TASK_ID='clusterizar_candles' AIRFLOW_CTX_EXECUTION_DATE='2024-11-21T15:21:37.435255+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-11-21T15:21:37.435255+00:00'
+[2024-11-21T15:21:53.732+0000] {logging_mixin.py:190} INFO - Task instance is in running state
+[2024-11-21T15:21:53.732+0000] {logging_mixin.py:190} INFO -  Previous state of the Task instance: queued
+[2024-11-21T15:21:53.734+0000] {logging_mixin.py:190} INFO - Current task name:clusterizar_candles state:running start_date:2024-11-21 15:21:53.494994+00:00
+[2024-11-21T15:21:53.734+0000] {logging_mixin.py:190} INFO - Dag name:candlestick_analysis and current dag run status:running
+[2024-11-21T15:21:53.735+0000] {taskinstance.py:731} INFO - ::endgroup::
+[2024-11-21T15:21:54.978+0000] {local_task_job_runner.py:266} INFO - Task exited with return code -9. For more information, see https://***.apache.org/docs/apache-***/stable/troubleshooting.html#LocalTaskJob-killed
+[2024-11-21T15:21:55.137+0000] {taskinstance.py:3895} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-11-21T15:21:55.140+0000] {local_task_job_runner.py:245} INFO - ::endgroup::
